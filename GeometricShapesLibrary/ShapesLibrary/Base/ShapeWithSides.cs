@@ -21,7 +21,7 @@
             int index = 0;
             foreach (var side in sides)
             {
-                if (side < 0)
+                if (side <= 0)
                     throw new ArgumentOutOfRangeException(nameof(side), side, "Parameter must be non-negative.");
                 _sides[index++] = side;
                 _shapePerimeter += side;

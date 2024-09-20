@@ -37,10 +37,10 @@ namespace ShapesLibrary.Shapes
             var b = Math.Pow(_sides[1], 2);
             var c = Math.Pow(_sides[2], 2);
 
-            var firstHypotese = c - a - b < Constants.Precision;
-            var secondHypotese = firstHypotese ? false : a - c - b < Constants.Precision;
+            var firstHypotese = Math.Abs(c - a - b) < Constants.Precision;
+            var secondHypotese = firstHypotese ? false : Math.Abs(a - c - b) < Constants.Precision;
             var thirdHypotese = firstHypotese || secondHypotese
-                ? false : b - c - a < Constants.Precision;
+                ? false : Math.Abs(b - c - a) < Constants.Precision;
 
             _isRectangular = firstHypotese || secondHypotese || thirdHypotese;
         }
