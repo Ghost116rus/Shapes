@@ -40,15 +40,11 @@ namespace ShapesLibrary.UnitTests
                 $"Triangle perimeter {trinalgePerimeter} should be {expected}");
         }
 
-
         private static IEnumerable<object[]> IsRectangularTestValues => new[]
         {
             new object[]{new List<double>{ 3, 4, 5 }, true},
             new object[]{new List<double>{ 8, 3, 5}, false},
             new object[]{new List<double>{ 89, 21, 90.99999999999999 }, false}
         };
-
-
-
     }
 }

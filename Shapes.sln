@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesLibrary", "GeometricS
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{482BEE47-9A40-47C0-B14B-F23BF41B1C99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapesLibrary.UnitTests", "GeometricShapesLibrary\ShapesLibrary.UnitTests\ShapesLibrary.UnitTests.csproj", "{26DC8D9B-B117-4684-8D51-E99CF5E36C75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShapesLibrary.UnitTests", "GeometricShapesLibrary\ShapesLibrary.UnitTests\ShapesLibrary.UnitTests.csproj", "{26DC8D9B-B117-4684-8D51-E99CF5E36C75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{723F207A-B78B-480D-B61F-0B0017F77D29}"
+	ProjectSection(SolutionItems) = preProject
+		SQLQuerry.txt = SQLQuerry.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
